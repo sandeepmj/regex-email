@@ -1,34 +1,50 @@
 <!doctype html>
-<!-- 
-   Sandeep Junnarkar    
+<!--
+   Sandeep Junnarkar
 Copyright (c) 2015 Sandeep Junnarkar
 -->
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>UPDATE TITLE</title>
-	<meta name="description" content="UPDATE CONTENT TITLE">
-	<meta name="author" content="Sandeep Junnarkar"
 
-	<link rel="stylesheet" type="text/css" href="main.css">
-	
-	<!-- If 1l IE 9]>
+	<head>
+		<meta charset="utf-8">
+		<title>email Finder</title>
+		<meta name="description" content="UPDATE CONTENT TITLE">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<!-- If 1l IE 9]>
 	<script scr="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
-</head>
-<body>
-	<h2>Copy and paste your text here and I'll return all the email addresses sprinkled throughout:</h2>
-		<form>
-			<input type="text" id="your_text" size="80" />
-		</form>
-	</br>
-	<input type="button" id="regex_btn" value="Find all emails" /> 
-<!-- 	<p>or</p>
+	</head>
+
+	<body>
+		<div class="content">
+
+
+			<h2>Copy and paste your text here and I'll return all the email addresses sprinkled throughout:</h2>
+			<form>
+				<input type="text" id="your_text" size="80" />
+			</form>
+			</br>
+			<input type="button" id="regex_btn" value="Find all emails" />
+			<div id="show-results">
+
+
+				<h2>Results</h2>
+				<P>
+					Here are the emails I found in the text you supplied:
+				</P>
+				<p>
+					<span id="show-emails"></span>
+				</p>
+
+			</div>
+
+		</div>
+		<!-- 	<p>or</p>
 	<input type="button" id="regex_tel_btn" value="Find all telephone numbers" /> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="main.js"></script>
 
-<script src="main.js"></script>
+	</body>
 
-</body>
 </html>
-	
