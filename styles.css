@@ -57,6 +57,11 @@ html, body {
   /* Sets default font-size to 16px, ensuring 1em = 16px; */
 }
 
+#main-container {
+  padding: 3em;
+  margin: auto;
+}
+
 .content {
   padding: 2em;
 }
