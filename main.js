@@ -2,6 +2,7 @@
 var regex_text, //holds text inputs
 	email_match = /\w+[\.|\-]?\w+@\w+\.?\w+\.?\w+\b/gi, // holds regex for finding emails
 	hold_matches = 0, //holds found emails
+	show_matches, // a
 	numberEmails = 0; // holds number of emails found
 
 $(document).ready(function () { //on DOM ready, bind clicks
@@ -23,7 +24,8 @@ function findEmails() {
 	if (regex_text.match(email_match)) {
 		console.log("Your text contains at least 1 email.");
 		hold_matches = (regex_text.match(email_match));
-		console.log(hold_matches);
+		show_matches = hold_matches.join(', '); // add space after commas
+		console.log(show_matches);
 		howMany(); //run function to find how many emails
 		showIt();
 
@@ -39,7 +41,7 @@ function howMany() {
 }
 
 function showIt() {
-	$("#show-emails").text(hold_matches); // plugs found emails into text
+	$("#show-emails").text(show_matches); // plugs found emails into text
 	$('#quantity-emails').text(numberEmails); // plugs in number of emails
 	$('#show-results').addClass('active');
 

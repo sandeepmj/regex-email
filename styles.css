@@ -75,6 +75,11 @@ html, body {
 
 h2 {
   padding: 1em 0 1em 0;
+  font-family: 'Josefin Slab', serif;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
 }
 
 
