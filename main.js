@@ -25,6 +25,7 @@ function findEmails() {
 		console.log("Your text contains at least 1 email.");
 		hold_matches = (regex_text.match(email_match));
 		show_matches = hold_matches.join(', '); // add space after commas
+		console.log(hold_matches);
 		console.log(show_matches);
 		howMany(); //run function to find how many emails
 		showIt();
