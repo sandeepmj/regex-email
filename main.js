@@ -30,8 +30,9 @@ function findEmails() {
 		showIt();
 
 	} else {
-		console.log("There are no emails in this text!");
-		console.log("I found " + numberEmails + " emails.");
+		// console.log("There are no emails in this text!");
+		// console.log("I found " + numberEmails + " emails.");
+		nothingFound();
 	};
 };
 //function to find number of emails found
@@ -40,10 +41,14 @@ function howMany() {
 	console.log("I found " + numberEmails + " emails.");
 }
 
+//shows results when positive result for emails
 function showIt() {
 	$("#show-emails").text(show_matches); // plugs found emails into text
 	$('#quantity-emails').text(numberEmails); // plugs in number of emails
 	$('#show-results').addClass('active');
+}
 
-
+//inform that there are no emails in text
+function nothingFound() {
+	$('#no-results').addClass('active');
 }

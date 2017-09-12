@@ -66,11 +66,11 @@ html, body {
   width: 80%;
 }
 
-#show-results {
+#show-results, #no-results {
   display: none;
 }
 
-#show-results.active {
+#show-results.active, #no-results.active {
   display: block;
 }
 
