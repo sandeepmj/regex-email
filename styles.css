@@ -60,6 +60,11 @@ html, body {
   padding: 2em;
 }
 
+#your_text {
+  /*line-height: 10em;*/
+  width: 80%;
+}
+
 #show-results {
   display: none;
 }
@@ -69,7 +74,7 @@ html, body {
 }
 
 h2 {
-  padding-bottom: .5em;
+  padding: 1em 0 1em 0;
 }
 
 
